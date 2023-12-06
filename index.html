@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Perpus Online</title>
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto p-4 h-screen">
+      <div class="bg-white p-4 rounded-lg shadow-md">
+        <h2 class="text-xl font-bold">Rak Belum Selesai Dibaca</h2>
+        <ul id="belumSelesaiDibaca" class="list-disc pl-4 mt-2"></ul>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow-md mt-4">
+        <h2 class="text-xl font-bold">Rak Selesai Dibaca</h2>
+        <ul id="selesaiDibaca" class="list-disc pl-4 mt-2"></ul>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow-md mt-4">
+        <h2 class="text-xl font-bold">Tambahkan Buku Baru</h2>
+        <input
+          type="text"
+          id="judulBuku"
+          placeholder="Judul Buku"
+          class="w-full p-2 border rounded-lg mt-2"
+        />
+        <input
+          type="text"
+          id="penulisBuku"
+          placeholder="Penulis"
+          class="w-full p-2 border rounded-lg mt-2"
+        />
+        <input
+          type="date"
+          id="tahunBuku"
+          placeholder="Tahun Buku"
+          class="w-full p-2 border rounded-lg mt-2"
+        />
+        <button
+          onclick="tambahBuku()"
+          class="bg-blue-500 text-white px-4 py-2 rounded-lg mt-2 hover:bg-blue-600"
+        >
+          Tambahkan
+        </button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
